@@ -12,10 +12,10 @@ The core argument: Snowflake provides the front door, control plane, and foundat
 
 | Generic concept | Snowflake product | What it does |
 |---|---|---|
-| **Front door** | Snowflake Intelligence, uber agent (upcoming) | The user interface where people interact with agents. The uber agent (upcoming) will route intent to the right specialist automatically |
-| **Control plane** | Cortex Agents + governance stack | The coordination and governance layer that orchestrates execution and enforces policy |
+| **Front door** | Agent Studio / Uber agent (upcoming) | The user interface where people interact with agents. The uber agent (upcoming) will route intent to the right specialist automatically |
+| **Control plane** | Snowflake Intelligence + Cortex Code + governance stack | The coordination and governance layer that orchestrates execution and enforces policy |
 
-The control plane is Cortex Agents wired to the full governance stack:
+The control plane is wired to the full governance stack:
 
 - **Orchestration** — tool selection, multi-step execution, delegation chains
 - **Skills** — Agent Skills (modular, portable task packages on stages or Git)
