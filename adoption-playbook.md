@@ -2,7 +2,7 @@
 
 ## How this complements the Design Principles
 
-The **12 Design Principles for Scaling Agents Without Sprawl** are a platform framework. They define how production agents are built, governed, observed, and retired. They prevent sprawl and make agents reliable and easy to consume.
+The **12 Design Principles for Scaling Enterprise Agents** are a platform framework. They define how production agents are built, governed, observed, and retired. They prevent sprawl and make agents reliable and easy to consume.
 
 This playbook addresses the other half: **how do you get your entire organization to actually use the governed path?**
 
