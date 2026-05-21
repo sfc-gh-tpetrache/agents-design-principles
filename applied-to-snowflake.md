@@ -56,13 +56,13 @@ The control plane is wired to the full governance stack:
                                        v
                       +----------------+----------------+
                       |           Front Door             |
-                      |  Snowflake Intelligence          |
+                      |  Agent Studio          |
                       |  Uber agent (upcoming)           |
                       +----------------+----------------+
                                        |
                                        v
   +--------------------------------------------------------------------+
-  |              Control Plane: Cortex Agents + Governance              |
+  |              Control Plane + Governance      
   |                                                                    |
   |  +------------------+  +------------------+  +------------------+  |
   |  | Cortex Agents    |  | Identity &       |  | Agent Studio     |  |
