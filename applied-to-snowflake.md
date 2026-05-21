@@ -12,7 +12,7 @@ The core argument: Snowflake provides the front door, control plane, and foundat
 
 | Generic concept | Snowflake product | What it does |
 |---|---|---|
-| **Front door** | Agent Studio / Uber agent (upcoming) | The user interface where people interact with agents. The uber agent (upcoming) will route intent to the right specialist automatically |
+| **Front door** | Agent Studio / Primary Agent | The user interface where people interact with agents. The Primary Agent will route intent to the right specialist automatically |
 | **Control plane** | Snowflake Intelligence + Cortex Code + governance stack | The coordination and governance layer that orchestrates execution and enforces policy |
 
 The control plane is wired to the full governance stack:
@@ -33,7 +33,7 @@ The control plane is wired to the full governance stack:
 |---|---|---|---|
 | P1 | Outcomes before agents | Agent spec (orchestration instructions), Agent Skills, Semantic Views (verified queries), Agent Evals (evaluation datasets) | The agent's purpose is defined in its spec, scoped by its skills, and grounded by verified queries in semantic views and evaluation datasets in the agent. Together these provide a built-in mechanism to define what the agent is for and what "correct" looks like — before a single user interacts with it. |
 | P2 | No anonymous agents | Contacts (owner), Object Tags (risk tier), Agent ID (upcoming) | Contacts assign a named owner. Object Tags classify risk tier with enforced allowed values. Agent ID (upcoming) will add a unique identity that persists through delegation chains. |
-| P3 | One front door, one control plane | Snowflake Intelligence, uber agent (upcoming), Cortex Agents + governance stack (control plane), Agent Studio | Snowflake Intelligence is the user interface where people interact with agents. The uber agent (upcoming) will route intent to the right specialist automatically. Cortex Agents orchestrate execution with governance enforced at every step. Agent Studio is where agents are built, registered, and configured. |
+| P3 | One front door, one control plane | Snowflake Intelligence, Cortex Code, Primary Agent, Cortex Agents + governance stack (control plane), Agent Studio | Snowflake Intelligence is the user interface where people interact with agents. The Primary Agent will route intent to the right specialist automatically. Cortex Agents orchestrate execution with governance enforced at every step. Agent Studio is where agents are built, registered, and configured. |
 | P4 | Specs as code, or it didn't happen | Git + Snowflake CLI, Agent Versioning, Cortex Agent SQL commands | Agents are SQL objects with full DDL — create, alter, describe, drop. Agent Versioning preserves every spec change. The Snowflake CLI enables Git-based workflows: store specs in a repo, review in PRs, deploy via CI/CD. DESCRIBE AGENT returns the full spec at any point for audit or rollback. |
 | P5 | Reuse before build | Horizon Catalog, Internal Marketplace, Semantic Views, Semantic View composability (upcoming), Object Tags | Horizon Catalog and Object Tags make existing agents and semantic views searchable by domain, use case, and data sources — duplicates are discoverable before building. Multiple agents can share the same semantic view today; semantic view composability (upcoming) will enable layering and extending semantic views rather than rebuilding per team. The Internal Marketplace enables cross-account sharing, so reuse scales beyond a single team. |
 | P6 | One vocabulary, enforced at launch | Tag Policies (allowed values), Horizon Catalog, Semantic View Tags | Allowed values on tags ensure consistent terminology — a risk tier can only be "high", "low", or "critical", not free text. Tags apply to agents, semantic views, and their attributes. Horizon Catalog makes everything searchable by those tags. One taxonomy, enforced at assignment time. |
@@ -57,7 +57,7 @@ The control plane is wired to the full governance stack:
                       +----------------+----------------+
                       |           Front Door             |
                       |  Agent Studio          |
-                      |  Uber agent (upcoming)           |
+                      |  Primary Agent         |
                       +----------------+----------------+
                                        |
                                        v
