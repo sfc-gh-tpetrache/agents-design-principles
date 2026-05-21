@@ -1,4 +1,4 @@
-# Design Principles for Scaling Agents Without Sprawl
+# Design Principles for Scaling Enterprise Agents
 
 ## Why these principles matter
 
@@ -6,7 +6,7 @@ Enterprises are deploying agents across customer support, finance, sales, and op
 
 The bottleneck is no longer model capability — it's **trust**. An agent can act, but accountability is a different question. If something goes wrong six months from now, can you answer who built it, what data it touched, what it produced, and on whose authority? For most organizations today, the answer is no.
 
-These twelve principles prevent sprawl by making the **compliant path the easiest path**: one front door funnels usage, one control plane enforces policy, reuse beats rebuild, and every agent is a named product with a lifecycle and an audit trail that outlives it. Certified metrics and semantic models are the shared language underneath — they ensure agents reason over governed, validated definitions rather than ad-hoc SQL, so every answer is traceable to a trusted source of truth. Together these principles let a central AI team scale agents to the whole enterprise — fast for builders, safe for security, and provable for regulators.
+These twelve principles minimize sprawl by making the **governed path the easiest path**: one front door funnels usage, one control plane enforces policy, reuse beats rebuild, and every agent is a named product with a lifecycle and an audit trail that outlives it. Certified metrics, semantics and ontologies are the shared language underneath — they ensure agents reason over governed, validated definitions rather than ad-hoc SQL, so every answer is traceable to a trusted source of truth. Together these principles let a central AI team scale agents to the whole enterprise — fast for builders, safe for security, and provable for regulators.
 
 
 ---
